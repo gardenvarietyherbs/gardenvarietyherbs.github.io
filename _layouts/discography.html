@@ -4,7 +4,7 @@ layout: default
 <div class="content-container">
     <div class="discography">
         {{ content }}
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
         {% if post.categories contains page.category %}
         <hr>
         {% include discography-entry.html currPost=post %}
